@@ -1,6 +1,6 @@
 TEMPLATE = aux
 
-INSTALLER = QtPyVCP-Installer-$$QTPYVCP_VERSION.run
+INSTALLER = QtPyVCP-Installer-$$(QTPYVCP_VERSION).run
 
 INPUT = $$PWD/config/config.xml $$PWD/packages/
 
