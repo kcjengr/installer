@@ -1,1 +1,1 @@
-pb-installer
+QtPyVCP
