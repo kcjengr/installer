@@ -1,7 +1,8 @@
 TEMPLATE = aux
 
 INSTALLER = QtPyVCP-Installer
-CONFIG += debug_and_release
+
+CONFIG += qt debug_and_release
 
 INPUT = $$PWD/config/config.xml $$PWD/packages/
 
