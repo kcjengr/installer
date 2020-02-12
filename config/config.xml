@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Installer>
     <Name>QtPyVCP Installer</Name>
-    <Version>0.0.1</Version>
+    <Version>0.3.4+27.g3db5a588</Version>
     <Title>QtPyVCP</Title>
     <Publisher>Kcjengr</Publisher>
     <ProductUrl>https://qtpyvcp.com/</ProductUrl>
@@ -14,7 +14,7 @@
     <TargetDir>@HomeDir@/qtpyvcp/</TargetDir>
     <RemoteRepositories>
          <Repository>
-             <Url>http://repository.qtpyvcp.com/main/</Url>
+             <Url>http://repository.qtpyvcp.com/main/repo/</Url>
          </Repository>
      </RemoteRepositories>
 </Installer>
