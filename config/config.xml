@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Installer>
     <Name>QtPyVCP Installer</Name>
-    <Version>v0.0.0_git000000</Version>
+    <Version>0.0.0+34.g00000000</Version>
     <Title>QtPyVCP</Title>
     <Publisher>Kcjengr</Publisher>
     <ProductUrl>https://qtpyvcp.com/</ProductUrl>
