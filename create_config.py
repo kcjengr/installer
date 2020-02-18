@@ -13,7 +13,7 @@ def main(args):
     tree = ElementTree.parse(in_config_file)
     root = tree.getroot()
 
-    repo = git.Repo("..")
+    repo = git.Repo()
     sha = repo.head.object.hexsha
 
     # version_tag = next((tag for tag in repo.tags if tag.commit == repo.head.commit), None)
