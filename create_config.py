@@ -29,7 +29,7 @@ def main(args):
         print(version)
 
         version_xml = root.find(".//Version")
-        release_version = "{}+34.g{}".format(str(version).strip('v'), sha[:8])
+        release_version = "{}+{}.g{}".format(str(version).strip('v'), len(repo.tags), sha[:8])
         print(release_version)
         version_xml.text = release_version
         tree.write(out_config_file, encoding='utf-8', xml_declaration=True)
