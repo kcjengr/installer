@@ -5,8 +5,6 @@ from xml.etree import ElementTree
 
 def main(args):
 
-    print(args)
-
     in_config_file = args[1]
     out_config_file = args[2]
 
@@ -14,24 +12,11 @@ def main(args):
     root = tree.getroot()
 
     repo = git.Repo()
-    sha = repo.head.object.hexsha
 
-    # version_tag = next((tag for tag in repo.tags if tag.commit == repo.head.commit), None)
-
-    version_tag = None
-
-    for tag in repo.tags:
-        version_tag = tag
-
-    if version_tag:
-        version = version_tag
-        print(version)
-
-        version_xml = root.find(".//Version")
-        release_version = "{}+{}.g{}".format(str(version).strip('v'), sha[16:18], sha[:8])
-        print(release_version)
-        version_xml.text = release_version
-        tree.write(out_config_file, encoding='utf-8', xml_declaration=True)
+    release_version = repo.git.describe('--tags', '--always', '--long')[1:]
+    version_xml = root.find(".//Version")
+    version_xml.text = release_version
+    tree.write(out_config_file, encoding='utf-8', xml_declaration=True)
 
 
 if __name__ == "__main__":
