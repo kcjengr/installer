@@ -16,7 +16,6 @@ def main(args):
     repo = git.Repo()
     sha = repo.head.object.hexsha
 
-
     # version_tag = next((tag for tag in repo.tags if tag.commit == repo.head.commit), None)
 
     version_tag = None
@@ -29,7 +28,7 @@ def main(args):
         print(version)
 
         version_xml = root.find(".//Version")
-        release_version = "{}+{}.g{}".format(str(version).strip('v'), len(repo.tags), sha[:8])
+        release_version = "{}+{}.g{}".format(str(version).strip('v'), sha[16:18], sha[:8])
         print(release_version)
         version_xml.text = release_version
         tree.write(out_config_file, encoding='utf-8', xml_declaration=True)
