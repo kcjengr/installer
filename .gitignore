@@ -8,3 +8,7 @@ build_release/
 repo/
 
 config/build_config.xml
+
+.idea/
+
+config/build.xml
