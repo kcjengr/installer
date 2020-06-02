@@ -19,7 +19,7 @@ def main(args):
     root = tree.getroot()
 
     release_version = get_versions().get('version')[1:]
-    os.environ("QTPYVCP_VER") = release_version
+    os.environ["QTPYVCP_VER"] = release_version
     version_xml = root.find(".//Version")
     version_xml.text = release_version
 
