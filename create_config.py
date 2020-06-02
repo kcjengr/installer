@@ -1,8 +1,5 @@
-import os
 import sys
 from xml.etree import ElementTree
-
-from qtpyvcp._version import get_versions
 
 
 def main(args):
@@ -15,11 +12,11 @@ def main(args):
 
     url = args[3]
 
+    release_version = args[4]
+
     tree = ElementTree.parse(in_config_file)
     root = tree.getroot()
 
-    release_version = get_versions().get('version')[1:]
-    os.environ["QTPYVCP_VERSION"] = release_version
     version_xml = root.find(".//Version")
     version_xml.text = release_version
 
