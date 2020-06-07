@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Installer>
+    <Name>QtPyVCP Installer</Name>
+    <Version>0.0.0+34.g00000000</Version>
+    <Title>QtPyVCP</Title>
+    <Publisher>Kcjengr</Publisher>
+    <ProductUrl>https://qtpyvcp.com/</ProductUrl>
+
+    <WizardStyle>Modern</WizardStyle>
+    <InstallerWindowIcon>icon.png</InstallerWindowIcon>
+    <Logo>logo.png</Logo>
+    <Watermark>watermark.png</Watermark>
+    <StartMenuDir>QtPyVCP</StartMenuDir>
+    <TargetDir>@HomeDir@/qtpyvcp/</TargetDir>
+    <RemoteRepositories>
+         <Repository>
+             <Url>http://repository.qtpyvcp.com/main/repo/</Url>
+         </Repository>
+     </RemoteRepositories>
+</Installer>
