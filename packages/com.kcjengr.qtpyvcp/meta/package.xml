@@ -2,7 +2,7 @@
 <Package>
     <DisplayName>QtPyVCP</DisplayName>
     <Description>Installs QtPyVCP framework for LinuxCNC</Description>
-    <Version>0.3.4</Version>
+    <Version>%ProductVersion%</Version>
     <ReleaseDate>2020-01-16</ReleaseDate>
     <Licenses>
         <License name="GNU Public License" file="LICENSE" />
