@@ -10,7 +10,7 @@ Component.prototype.beginInstallation = function()
 Component.prototype.createOperations = function()
 {
 
-    if (Component.isFromOnlineRepository()){
+    if (Component.isFromOnlineRepository === true){
         Component.loadDataFromPackage("com.kcjengr.qtpyvcp")
     }
 
