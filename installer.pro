@@ -12,7 +12,7 @@ INPUT += $$PWD/packages/com.kcjengr.qtpyvcp/meta/installscript.qs
 
 qtpyvcp.input = INPUT
 qtpyvcp.output = $$INSTALLER
-qtpyvcp.commands += $$(HOME)/Qt/QtIFW-3.2.0/bin/binarycreator -p $$PWD/packages --config $$PWD/config/config.xml -e com.kcjengr.qtpyvcp $$PWD/bin/${QMAKE_FILE_OUT};
+qtpyvcp.commands += $$(HOME)/Qt/QtIFW-3.2.0/bin/binarycreator -p $$PWD/packages --config $$PWD/config/config.xml $$PWD/bin/${QMAKE_FILE_OUT};
 qtpyvcp.commands += $$(HOME)/Qt/QtIFW-3.2.0/bin/repogen -p $$PWD/packages -i com.kcjengr.qtpyvcp --update $$PWD/repo;
 
 qtpyvcp.CONFIG += target_predeps no_link combine

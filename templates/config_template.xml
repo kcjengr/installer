@@ -15,5 +15,5 @@
          <Repository>
              <Url>http://repository.qtpyvcp.com/main/repo/</Url>
          </Repository>
-     </RemoteRepositories>
+    </RemoteRepositories>
 </Installer>

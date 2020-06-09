@@ -12,5 +12,4 @@
     <Default>true</Default>
     <RequiresAdminRights>true</RequiresAdminRights>
     <Script>installscript.qs</Script>
-
 </Package>
