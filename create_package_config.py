@@ -1,4 +1,5 @@
 import sys
+from datetime import date
 from xml.etree import ElementTree
 
 
@@ -13,6 +14,9 @@ def main(args):
 
     version_xml = root.find(".//Version")
     version_xml.text = release_version
+
+    date_xml = root.find(".//ReleaseDate")
+    date_xml.text = str(date.today())
 
     tree.write(out_config_file, encoding='utf-8', xml_declaration=True)
 
