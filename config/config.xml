@@ -5,15 +5,17 @@
     <Title>QtPyVCP</Title>
     <Publisher>Kcjengr</Publisher>
     <ProductUrl>https://qtpyvcp.com/</ProductUrl>
-    <WizardStyle>Modern</WizardStyle>
+    <PageListPixmap>logo.png</PageListPixmap>
     <InstallerWindowIcon>icon.png</InstallerWindowIcon>
-    <Logo>logo.png</Logo>
+    <Logo>logo2.png</Logo>
     <Watermark>watermark.png</Watermark>
+    <StyleSheet>style.qss</StyleSheet>
     <StartMenuDir>QtPyVCP</StartMenuDir>
-    <TargetDir>@HomeDir@/qtpyvcp/</TargetDir>
+    <TargetDir>@HomeDir@/.qtpyvcp-install/</TargetDir>
     <RemoteRepositories>
          <Repository>
-             <Url>http://repository.qtpyvcp.com/main/repo/</Url>
+             <Url>http://repository.qtpyvcp.com/dev/repo/</Url>
          </Repository>
     </RemoteRepositories>
+    <ControlScript>controller.qs</ControlScript>
 </Installer>
