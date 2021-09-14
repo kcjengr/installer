@@ -14,7 +14,7 @@
     <TargetDir>@HomeDir@/.qtpyvcp-install/</TargetDir>
     <RemoteRepositories>
          <Repository>
-             <Url>http://repository.qtpyvcp.com/dev/repo/</Url>
+             <Url>http://repository.qtpyvcp.com/repo/dev/repo</Url>
          </Repository>
     </RemoteRepositories>
     <ControlScript>controller.qs</ControlScript>
