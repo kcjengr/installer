@@ -5,8 +5,8 @@ INSTALLER = QtPyVCP-Installer-$$(QTPYVCP_VERSION).run
 INPUT = $$PWD/config/
 INPUT += $$PWD/packages/
 
-INPUT += $$PWD/packages/com.kcjengr.qtpyvcp/meta/package.xml
-INPUT += $$PWD/packages/com.kcjengr.qtpyvcp/meta/installscript.qs
+INPUT += $$PWD/packages/com.qtpyvcp.core/meta/package.xml
+INPUT += $$PWD/packages/com.qtpyvcp.core/meta/installscript.qs
 
 qtpyvcp.input = INPUT
 qtpyvcp.output = $$INSTALLER
