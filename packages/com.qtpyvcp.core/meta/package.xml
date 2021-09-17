@@ -5,7 +5,9 @@
     <Version>0.00</Version>
     <ReleaseDate>0000-00-00</ReleaseDate>
     <Licenses>
-        <License name="GNU Public License" file="LICENSE" />
+        <License name="GNU Public License" file="GPLv2.md" />
+        <License name="MIT License" file="MIT.md" />
+        <License name="PyDM BSD License" file="PyDM-BSD.md" />
     </Licenses>
     <SortingPriority>8</SortingPriority>
     <Default>true</Default>
